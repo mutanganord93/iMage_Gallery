@@ -1,0 +1,112 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --column-gutter: 24px;
+    --columns: 3;
+    --row-gutter: 24px;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    width: 100%;
+}
+
+
+.main {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    overflow-y: hidden;
+}
+
+.grid {
+    width: 100%;
+}
+
+.imageW {
+    position: relative;
+    /* width: 250px; */
+    border-radius: 100px;
+    margin: 0 1rem 1rem 0;
+    display: inline-block;
+    width: 350px;
+}
+
+.imageW img:nth-child(odd) {
+    border-radius: 400px;
+}
+
+.imageW img:nth-child(even) {
+    border-radius: 40px;
+}
+
+.imageW img {
+    width: 100%;
+    height: 100%;
+}
+
+.imageW .icons {
+    display: none;
+    opacity: 0;
+}
+
+.imageW:hover .iCons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    opacity: 1;
+    -moz-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+}
+
+.imageW:hover .iCons i {
+    background-color: white;
+    max-height: 48px;
+    padding: 12px 16px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.imageW .iCons i {
+    opacity: 0;
+    display: none;
+}
+
+.imageW .iCons button {
+    opacity: 0;
+    display: none;
+}
+
+.imageW:hover .iCons button {
+    display: block;
+    background-color: red;
+    text-align: center;
+    border: none;
+    max-height: 48px;
+    padding: 12px 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    color: white;
+    opacity: 1;
+    z-index: 1000;
+}
