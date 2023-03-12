@@ -13,6 +13,7 @@ const useDataApi = (url)=>{
 
             try {
                 const res = await axios(url);
+                console.log(res);
                 setData(res.data.results);
             } catch (error) {
                 setIsError(error);
