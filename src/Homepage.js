@@ -9,8 +9,7 @@ import { useNavigate } from 'react-router-dom';
 function Homepage() {
     const [query, setQuery] = useState(``);
     const [iMage, setImage] = useState("");
-    const apiKey = `_HNtaX053kTx4krErQM7aS1frZywgOs1Mu6m349qcts`;
-    const url = `https://api.unsplash.com/search/photos?page=1&per_page=100&query=${`dark`}&client_id=${apiKey}`;
+    const url = `https://image-galleryapi.onrender.com/pictures?query=${`dark`}`;
     const { data, isLoading, isError } = useDataApi(url);
     const [Hovering, IsHovering] = useState(false);
     const [db, setDB] = useState([]);
