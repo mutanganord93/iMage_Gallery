@@ -13,7 +13,7 @@ function CollectionX() {
   const {collection_id}= useParams();
   const [isLoading,setLoading]= useState(true);
   const [name,setName] = useState('');
-  let url = `http://localhost:5000/${collection_id}`;
+  let url = `https://image-galleryapi.onrender.com/${collection_id}`;
   console.log(`This is the collection id: ${collection_id}`);
   const [query, setQuery] = useState('');
   

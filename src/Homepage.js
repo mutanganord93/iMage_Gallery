@@ -43,7 +43,7 @@ function Homepage() {
 
     useEffect(() => {
         axios
-            .get('http://localhost:5000/')
+            .get('https://image-galleryapi.onrender.com')
             .then((res) => {
                 setDB(res.data.collections);
 

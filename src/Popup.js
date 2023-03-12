@@ -17,7 +17,7 @@ export const Popup = (props)=>{
     const addToThisCollection = async(el)=>{
         el.preventDefault();
         let collectionId = el.target.nextElementSibling.firstElementChild.innerText
-        const newPicture = await axios.post(`http://localhost:5000/${collectionId}/pics`,
+        const newPicture = await axios.post(`https://image-gallery-8lq0.onrender.com/${collectionId}/pics`,
         {
             "url":image
         });
@@ -44,7 +44,7 @@ export const Popup = (props)=>{
     const addToCollection = async(el)=>{
         el.preventDefault();
         setInput('');
-        const newCollection = await axios.post(`http://localhost:5000/${input}`,
+        const newCollection = await axios.post(`https://image-galleryapi.onrender.com/${input}`,
         {
             "name":input,
             "data":[

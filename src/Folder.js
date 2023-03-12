@@ -32,7 +32,7 @@ export const Folder = (props) => {
         <div className="options">
             <i className="fa-solid fa-trash"    
                onClick={async()=>{
-                await axios.delete(`http://localhost:5000/${props.data.name}?id=${props.data._id}`)
+                await axios.delete(`https://image-galleryapi.onrender.com/${props.data.name}?id=${props.data._id}`)
                 props.setDB((res)=>{
                   return res.filter((item)=>{return item._id !== props.data._id})
                 })}}></i>

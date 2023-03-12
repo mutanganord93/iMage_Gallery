@@ -22,7 +22,7 @@ function App() {
   
   useEffect(() => {
     axios
-      .get("http://localhost:5000/")
+      .get("https://image-galleryapi.onrender.com")
       .then((res) => {
         setLoading(false);
         setDB(res.data.collections);
