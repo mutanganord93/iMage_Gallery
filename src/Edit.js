@@ -10,6 +10,7 @@ export const Edit = (props)=>{
     const editCollectionName = async(el)=>       
     {
         console.log(`new collection name: ${newName}`);
+        //const newCollection = await axios.patch(`https://image-galleryapi.onrender.com/${collection_id}`
         const newCollection = await axios.patch(`https://image-galleryapi.onrender.com/${collection_id}`,
         {"name":newName});
         let name = el.target.parentElement.parentElement.classList;

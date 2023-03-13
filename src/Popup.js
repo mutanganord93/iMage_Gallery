@@ -44,6 +44,7 @@ export const Popup = (props)=>{
     const addToCollection = async(el)=>{
         el.preventDefault();
         setInput('');
+        // `https://image-galleryapi.onrender.com/${input}`
         const newCollection = await axios.post(`https://image-galleryapi.onrender.com/${input}`,
         {
             "name":input,

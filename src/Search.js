@@ -12,6 +12,7 @@ function Search(){
     console.log(`query parameter ${val}`)
     const [query, setQuery] = useState(val);
     const [iMage, setImage] = useState("");
+    // const url = `https://image-galleryapi.onrender.com/pictures?query=${val}`
     const url = `https://image-galleryapi.onrender.com/pictures?query=${val}`
     const { data, isLoading, isError } = useDataApi(url);
     const [Hovering, IsHovering] = useState(false);
