@@ -42,7 +42,7 @@ function Homepage() {
 
     useEffect(() => {
         axios
-            .get('https://weatheappdesignapi.onrender.com/pin/')
+            .get('https://weatheappdesignapi.onrender.com/pin')
             .then((res) => {
                 setDB(res.data.collections);
 
