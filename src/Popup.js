@@ -7,10 +7,10 @@ export const Popup = (props)=>{
     const setDB = props.setDB;
     const image = props.iMage;
     const [input, setInput] = useState('');
-    console.log(data);
+    // console.log(data);
     const close = (el)=>{
         let name = '';
-        console.log(el.target.parentElement);
+        // console.log(el.target.parentElement);
         name = el.target.parentElement;
         name.classList.toggle("hiddenDrop")
     }
@@ -25,7 +25,7 @@ export const Popup = (props)=>{
 
     }
     const newCollectionW = (el)=>{
-        console.log(el.target.parentElement.parentElement.nextElementSibling);
+        // console.log(el.target.parentElement.parentElement.nextElementSibling);
         let name = '';
         name = el.target.parentElement.parentElement.nextElementSibling;
         name.classList.toggle("active");
@@ -34,7 +34,7 @@ export const Popup = (props)=>{
         let name = el.target.parentElement.parentElement;
         
         if(el.target.classList.contains('submit')){
-            console.log(el.target.parentElement.previousElementSibling.firstElementChild.value);
+            // console.log(el.target.parentElement.previousElementSibling.firstElementChild.value);
             name.classList.toggle("active");
         }
         else
@@ -52,13 +52,13 @@ export const Popup = (props)=>{
                 {"url":image}
             ]
         });
-        console.log(newCollection.data.collection)
-        console.log(setDB)
+        // console.log(newCollection.data.collection)
+        // console.log(setDB)
         setDB((res)=>{return res.concat(newCollection.data.collection)})
-        console.log(data);
+        // console.log(data);
         let name = el.target.parentElement.parentElement;        
         if(el.target.classList.contains('submit')){
-            console.log(el.target.parentElement.previousElementSibling.firstElementChild.value);
+            // console.log(el.target.parentElement.previousElementSibling.firstElementChild.value);
             name.classList.toggle("active");
         }
         else
@@ -70,7 +70,7 @@ export const Popup = (props)=>{
 
     const handleEdit = (event)=>{
         setInput(event.target.value);
-        console.log(event.target.value);
+        // console.log(event.target.value);
     }
 
     return(

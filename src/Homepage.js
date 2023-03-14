@@ -37,7 +37,7 @@ function Homepage() {
         let val = "";
         val = el.target.parentElement.previousElementSibling.src;
         setImage(val);
-        console.log(val);
+        // console.log(val);
     }
 
     useEffect(() => {
@@ -48,7 +48,7 @@ function Homepage() {
 
             })
             .catch((error) => {
-                console.log(error);
+                // console.log(error);
             });
     }, []);
 

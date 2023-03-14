@@ -38,7 +38,7 @@ export const Folder = (props) => {
                 })}}></i>
             <div className="details">
               <h1>{props.data.name}</h1>
-              {console.log(props.data.name)}
+              {/* {console.log(props.data.name)} */}
             </div>
             <i className="fa-solid fa-pen-to-square" onClick={editCollectionName}></i>
         </div>

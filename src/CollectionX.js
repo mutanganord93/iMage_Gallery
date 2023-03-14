@@ -14,7 +14,7 @@ function CollectionX() {
   const [isLoading,setLoading]= useState(true);
   const [name,setName] = useState('');
   let url = `https://weatheappdesignapi.onrender.com/pin/${collection_id}`;
-  console.log(`This is the collection id: ${collection_id}`);
+  // console.log(`This is the collection id: ${collection_id}`);
   const [query, setQuery] = useState('');
   
   
@@ -31,7 +31,7 @@ function CollectionX() {
       .get(url)
       .then((res) => {
         setLoading(false);
-        console.log(res.data.collection.data); 
+        // console.log(res.data.collection.data); 
         setData(res.data.collection.data);
         setName(res.data.collection.name);
       })

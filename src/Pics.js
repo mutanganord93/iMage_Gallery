@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 const Pics = (props) => {
-  console.log(`${props.name}  id:${props.id}`);
+  // console.log(`${props.name}  id:${props.id}`);
   
   return (
 

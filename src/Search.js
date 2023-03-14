@@ -9,7 +9,7 @@ import useDataApi from "./dataFetch";
 
 function Search(){
     const {val} = useParams()
-    console.log(`query parameter ${val}`)
+    // console.log(`query parameter ${val}`)
     const [query, setQuery] = useState(val);
     const [iMage, setImage] = useState("");
     const url = `https://weatheappdesignapi.onrender.com/pictures?query=${val}`
@@ -45,7 +45,7 @@ function Search(){
         let val = "";
         val = el.target.parentElement.previousElementSibling.src;
         setImage(val);
-        console.log(val);
+        // console.log(val);
     }
 
     useEffect(() => {
@@ -56,7 +56,7 @@ function Search(){
 
             })
             .catch((error) => {
-                console.log(error);
+                // console.log(error);
             });
     }, []);
 

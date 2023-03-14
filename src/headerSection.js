@@ -12,19 +12,19 @@ export const Header = (props)=>{
 
     const searchClick = (el)=>{
         el.preventDefault();
-        console.log(el.target.parentElement.previousElementSibling.firstElementChild.innerText);
+        // console.log(el.target.parentElement.previousElementSibling.firstElementChild.innerText);
     }
 
     const handleTask = (event)=>{   
         props.setQuery(event.target.value);
-        console.log(props.query);
+        // console.log(props.query);
     }
 
     const handleKeyDown = (el)=>{
         // el.preventDefault();
         if (el.key === "Enter") {
             el.preventDefault();
-            console.log(el.target);
+            // console.log(el.target);
         }
     }
     
