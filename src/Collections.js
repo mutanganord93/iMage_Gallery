@@ -22,8 +22,7 @@ function App() {
   
   useEffect(() => {
     axios
-      // .get("https://image-galleryapi.onrender.com")
-      .get('https://image-galleryapi.onrender.com')
+      .get('https://weatheappdesignapi.onrender.com/pin/')
       .then((res) => {
         setLoading(false);
         setDB(res.data.collections);

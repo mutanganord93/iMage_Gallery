@@ -13,8 +13,7 @@ function CollectionX() {
   const {collection_id}= useParams();
   const [isLoading,setLoading]= useState(true);
   const [name,setName] = useState('');
-  let url = `https://image-galleryapi.onrender.com/${collection_id}`;
-  // let url = `https://image-galleryapi.onrender.com/${collection_id}`;
+  let url = `https://weatheappdesignapi.onrender.com/pin/${collection_id}`;
   console.log(`This is the collection id: ${collection_id}`);
   const [query, setQuery] = useState('');
   

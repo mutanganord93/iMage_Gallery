@@ -9,8 +9,7 @@ import { useNavigate } from 'react-router-dom';
 function Homepage() {
     const [query, setQuery] = useState(``);
     const [iMage, setImage] = useState("");
-    // const url = `https://image-galleryapi.onrender.com/pictures?query=dark`;
-    const url = `https://image-galleryapi.onrender.com/pictures?query=dark`;
+    const url = `https://weatheappdesignapi.onrender.com/pictures?query=dark`;
     const { data, isLoading, isError } = useDataApi(url);
     const [Hovering, IsHovering] = useState(false);
     const [db, setDB] = useState([]);
@@ -43,8 +42,7 @@ function Homepage() {
 
     useEffect(() => {
         axios
-            // .get('https://image-galleryapi.onrender.com')
-            .get('https://image-galleryapi.onrender.com')
+            .get('https://weatheappdesignapi.onrender.com/pin/')
             .then((res) => {
                 setDB(res.data.collections);
 

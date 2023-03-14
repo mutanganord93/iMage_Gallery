@@ -6,7 +6,7 @@ import Search from './Search';
 import Collections from './Collections';
 import CollectionX from './CollectionX';
 import {Routes, Route} from 'react-router-dom';
-import apiData from './apiData';
+
 
 const App = () =>{
 
