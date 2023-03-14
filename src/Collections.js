@@ -22,7 +22,7 @@ function App() {
   
   useEffect(() => {
     axios
-      .get('https://weatheappdesignapi.onrender.com/pin/')
+      .get('/pin')
       .then((res) => {
         setLoading(false);
         setDB(res.data.collections);

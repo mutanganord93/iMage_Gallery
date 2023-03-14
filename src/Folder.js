@@ -32,7 +32,7 @@ export const Folder = (props) => {
         <div className="options">
             <i className="fa-solid fa-trash"    
                onClick={async()=>{
-                await axios.delete(`https://weatheappdesignapi.onrender.com/pin/${props.data.name}?id=${props.data._id}`)
+                await axios.delete(`/pin/${props.data.name}?id=${props.data._id}`)
                 props.setDB((res)=>{
                   return res.filter((item)=>{return item._id !== props.data._id})
                 })}}></i>

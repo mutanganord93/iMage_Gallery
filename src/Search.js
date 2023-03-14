@@ -12,7 +12,7 @@ function Search(){
     // console.log(`query parameter ${val}`)
     const [query, setQuery] = useState(val);
     const [iMage, setImage] = useState("");
-    const url = `https://weatheappdesignapi.onrender.com/pictures?query=${val}`
+    const url = `/pictures?query=${val}`
     const { data, isLoading, isError } = useDataApi(url);
     const [Hovering, IsHovering] = useState(false);
     const [db, setDB] = useState([]);
@@ -50,7 +50,7 @@ function Search(){
 
     useEffect(() => {
         axios
-            .get('https://weatheappdesignapi.onrender.com/pin/')
+            .get('/pin/')
             .then((res) => {
                 setDB(res.data.collections);
 
