@@ -50,7 +50,7 @@ function Search(){
 
     useEffect(() => {
         axios
-            .get('/pin/')
+            .get('https://weatheappdesignapi.onrender.com/pin/')
             .then((res) => {
                 setDB(res.data.collections);
 
