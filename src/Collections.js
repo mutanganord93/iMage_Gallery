@@ -1,4 +1,3 @@
-
 import { Folder } from "./Folder";
 import { useState, useEffect } from "react";
 import axios from "axios";
@@ -22,7 +21,7 @@ function App() {
   
   useEffect(() => {
     axios
-      .get('https://weatheappdesignapi.onrender.com/pin/')
+      .get('https://image-galleryapi.onrender.com/pin')
       .then((res) => {
         setLoading(false);
         setDB(res.data.collections);

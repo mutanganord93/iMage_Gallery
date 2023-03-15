@@ -17,7 +17,7 @@ export const Popup = (props)=>{
     const addToThisCollection = async(el)=>{
         el.preventDefault();
         let collectionId = el.target.nextElementSibling.firstElementChild.innerText;
-        const newPicture = await axios.post(`https://weatheappdesignapi.onrender.com/pin/${collectionId}/pics`,
+        const newPicture = await axios.post(`https://image-galleryapi.onrender.com/pin/${collectionId}/pics`,
         {
             "url":image
         });
@@ -45,7 +45,7 @@ export const Popup = (props)=>{
         el.preventDefault();
         setInput('');
         // `https://image-galleryapi.onrender.com/${input}`
-        const newCollection = await axios.post(`https://weatheappdesignapi.onrender.com/pin/${input}`,
+        const newCollection = await axios.post(`https://image-galleryapi.onrender.com/pin/${input}`,
         {
             "name":input,
             "data":[
